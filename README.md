@@ -2,6 +2,10 @@
 
 基于 [ChatGPT / DALL-E Alfred Workflow](https://github.com/alfredapp/openai-workflow/) 做了迭代
 
+## 下载workflow
+
+[点击下载](https://raw.githubusercontent.com/HuangAndMC/ask-qwen-workflow/refs/heads/main/Release/Ask%20Qwen_v1.alfredworkflow)
+
 ## 新增Feature
 1. 触发方式：支持了 选中文本 → 快捷键直接触发对话框并带入query → 提问
 2. 模型适配：
