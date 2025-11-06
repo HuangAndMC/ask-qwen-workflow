@@ -1,0 +1,56 @@
+#!/usr/bin/osascript -l JavaScript
+
+function envVar(varName) {
+  return $.NSProcessInfo
+    .processInfo
+    .environment
+    .objectForKey(varName).js
+}
+
+function dirContents(path) {
+  return $.NSFileManager.defaultManager.contentsOfDirectoryAtURLIncludingPropertiesForKeysOptionsError(
+    $.NSURL.fileURLWithPath(path), undefined, $.NSDirectoryEnumerationSkipsHiddenFiles, undefined)
+    .js.map(p => p.path.js).sort()
+}
+
+function deleteFile(path) {
+  $.NSFileManager.defaultManager.removeItemAtPathError(path, undefined)
+}
+
+function run() {
+  const archiveDir = `${envVar("alfred_workflow_data")}/archive`
+  
+  // 检查archive目录是否存在
+  if (!$.NSFileManager.defaultManager.fileExistsAtPath(archiveDir)) {
+    return JSON.stringify({ 
+      items: [{
+        title: "归档目录不存在",
+        subtitle: "No chat history files were deleted"
+      }]
+    })
+  }
+
+  // 获取目录中的所有文件
+  const files = dirContents(archiveDir)
+    .filter(file => file.endsWith(".json"))
+  
+  // 删除所有文件
+  let deletedCount = 0
+  files.forEach(file => {
+    try {
+      deleteFile(file)
+      deletedCount++
+    } catch (error) {
+      // 忽略删除失败的文件
+      console.log("Failed to delete file: " + file)
+    }
+  })
+
+  // 返回结果
+  return JSON.stringify({ 
+    items: [{
+      title: "成功清空历史会话记录",
+      subtitle: `已删除 ${deletedCount} 条记录`
+    }]
+  })
+}

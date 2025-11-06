@@ -1,48 +1,72 @@
-# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> ChatGPT / DALL-E Alfred Workflow
+# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> Ask Qwen
 
-OpenAI integrations
+基于 [ChatGPT / DALL-E Alfred Workflow](https://github.com/alfredapp/openai-workflow/) 做了迭代
 
-[⤓ Install on the Alfred Gallery](https://alfred.app/workflows/alfredapp/openai)
+## 新增Feature
+1. 触发方式：支持了 选中文本 → 快捷键直接触发对话框并带入query → 提问
+2. 模型适配：
+   1. 新增了对通义qwen模型、DeepSeek模型的适配
+   2. 新增了开启互联网搜索的功能
+   3. 如果非预设的 model & endpoint 的话，支持配置强制覆盖以适配不在配置项中的模型
+3. 历史会话：
+   1. 支持快捷键直接打开历史会话列表
+   2. 新增了一个配置项（自定义历史会话保存），配置后脚本中会额外备份一份到目标地址
+   3. 新增了一条流程，支持清空历史会话记录
+4. 结果通知：在使用`⌥`等跟进操作复制了answer、清空了历史会话后增加了macos的结果通知
 
-## Setup
+## 一、设置
 
-1. Create an OpenAI account and [log in](https://platform.openai.com/login?launch).
-2. On the [API keys page](https://platform.openai.com/api-keys), click `+ Create new secret key`.
-3. Name your new secret key and click `Create secret key`.
-4. Copy your secret key and add it to the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+1. 创建百炼账号并[登录](https://bailian.console.aliyun.com/?tab=home#/home)
+2. 点击[模型服务-秘钥管理](https://bailian.console.aliyun.com/?tab=model#/api-key), 新建秘钥并复制
+3. 获取API平台的的`endpoint`
+4. 复制`apiKey`和`endpoint`，粘贴在workflow的配置项里即可
 
-## Usage
+> 其他平台如[DeepSeek开放平台](https://platform.deepseek.com/sign_in)也是类似的操作
 
-### ChatGPT
+## 二、使用
 
-Query ChatGPT via the `chatgpt` keyword, the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/), or the [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/).
+### 1. 触发Chat
 
-![Start ChatGPT query](Workflow/images/about/chatgptkeyword.png)
+workflow有三种触发方式：
 
-![Querying ChatGPT](Workflow/images/about/chatgpttextview.png)
+1. 唤起alfred对话框后，可以通过关键词触发（默认是`ask`, 支持修改）
+![基于关键词触发](Workflow/images/about/tigger_keyword.png)
+2. 唤起alfred对话框后，配置[兜底召回(Fallback Search)](https://www.alfredapp.com/help/features/default-results/fallback-searches/)触发
+![基于Fallback Search触发](Workflow/images/about/trigger_fallback_search.png)
+3. 选中任意文字，通过快捷键触发（默认是`⌥/`，支持修改）
+![基于快捷键自动带入文本触发](Workflow/images/about/trigger_hotkey_with_content.png)
 
-* <kbd>↩</kbd> Ask a new question.
-* <kbd>⌘</kbd><kbd>↩</kbd> Clear and start new chat.
-* <kbd>⌥</kbd><kbd>↩</kbd> Copy last answer.
-* <kbd>⌃</kbd><kbd>↩</kbd> Copy full chat.
-* <kbd>⇧</kbd><kbd>↩</kbd> Stop generating answer.
+### 2. 对话界面
 
-#### Chat History
+对话面板：
+![对话面板](Workflow/images/about/chat_pannel.png)
 
-View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the first question as the title and the last as the subtitle.
+进一步的指令：
+* <kbd>↩</kbd> 继续提问
+* <kbd>⌘</kbd><kbd>↩</kbd> 开启一个新会话
+* <kbd>⌥</kbd><kbd>↩</kbd> 复制最近一次的回答
+* <kbd>⌃</kbd><kbd>↩</kbd> 复制全部对话内容
+* <kbd>⇧</kbd><kbd>↩</kbd> 中断请求
 
-![Viewing chat histories](Workflow/images/about/chatgpthistory.png)
+### 3. 历史会话
 
-<kbd>↩</kbd> to archive the current chat and load the selected one. Older chats can be trashed with the `Delete` [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). Select multiple chats with the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer).
+开启新会话后，会将上一轮的对话保存到history中，检索历史会话支持两种触发方式：
 
-### DALL·E
+1. 通过`ask`关键词触发workflow后再按下`⌥↩`可检索出历史会话
+2. 通过单独的`history`关键词直接检索
 
-Query DALL·E via the `dalle` keyword.
+回车后可打开对话面板，可以基于历史会话自动带入上下文重新对话
 
-![Start DALL-E query](Workflow/images/about/dallekeyword.png)
+![浏览历史会话记录](Workflow/images/about/history_chat.png)
 
-![Querying DALL-E](Workflow/images/about/dalletextview.png)
+历史会话支持基于首问和末次问的问题进行检索匹配
 
-* <kbd>↩</kbd> Send a new prompt.
-* <kbd>⌘</kbd><kbd>↩</kbd> Archive images.
-* <kbd>⌥</kbd><kbd>↩</kbd> Reveal last image in the Finder.
+![历史会话记录检索匹配](Workflow/images/about/chat_history_search.png)
+
+历史会话允许用户在其他地方保留一个副本
+
+![历史会话自定义存储](Workflow/images/about/user_history_save.png)
+
+历史会话支持清空，但是清空的只是workflow内部文件(`${envVar("alfred_workflow_data")}/archive`)，用户自定义的副本不会被清空
+
+![历史会话自定义存储](Workflow/images/about/clean_history.png)

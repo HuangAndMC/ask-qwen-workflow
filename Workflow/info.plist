@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bundleid</key>
-	<string>com.alfredapp.vitor.openai</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>002874FF-3AE4-4E8F-A4F8-65844E5D6CFB</key>
@@ -24,19 +24,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>02627B69-31FA-4441-A186-B2095B6F40B9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>01A59F71-DA66-43E4-A948-1F2B653710DF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C81D4557-D55C-4B23-8FB3-B28519D292A0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -123,19 +110,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>2DFDEB25-8ABB-4A11-A363-0879F9878137</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2F3B5565-0BBD-4DC6-962B-BEF7277AC599</key>
 		<array>
 			<dict>
@@ -183,7 +157,7 @@
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>Stop generating answer</string>
+				<string>中断请求</string>
 				<key>vitoclose</key>
 				<true/>
 			</dict>
@@ -193,7 +167,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Start new chat</string>
+				<string>⌘ ↩  开启一段新会话</string>
 				<key>vitoclose</key>
 				<true/>
 			</dict>
@@ -203,7 +177,7 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string>Copy last answer</string>
+				<string>复制最近一次回答</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -213,7 +187,20 @@
 				<key>modifiers</key>
 				<integer>262144</integer>
 				<key>modifiersubtext</key>
-				<string>Copy full chat</string>
+				<string>复制全部</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>54504993-7408-48C6-A3E3-DE1B68203440</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF340515-39CD-47C9-965D-B1631A3BF45F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -229,55 +216,6 @@
 				<string></string>
 				<key>vitoclose</key>
 				<true/>
-			</dict>
-		</array>
-		<key>698A6D21-8A81-4110-9BF3-BF2FA07C5DC3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C05A6557-586B-4B86-AFFB-459590991D55</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>6AAF51CA-1EE9-4CB8-B632-1B83BBD40B45</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Reveal last image</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6AAF51CA-1EE9-4CB8-B632-1B83BBD40B45</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6EE7D872-0140-4B1B-B21A-D233250E9CC4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6EE7D872-0140-4B1B-B21A-D233250E9CC4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>61B83861-C1E7-4430-9D5B-399018364F26</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
 			</dict>
 		</array>
 		<key>74890339-2177-4514-B0CD-9D06DF626D21</key>
@@ -297,6 +235,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B31B4473-3184-4D6C-B4D9-78FC5DCC7D00</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7527CA10-AC05-4D34-BCA5-B079E0FE5FC9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AFFDBAAE-4F4B-4184-B9AF-0EF93DC38C69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7CE25BF5-0AF8-411E-8A05-244BF7CA878F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D677EB7A-39FC-447A-B9CF-6824C23A2610</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -343,19 +307,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0052DD7D-01DA-4E09-8B83-3F4994975B5F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A4782A1E-2A93-401B-9CB7-1D8770AD510E</key>
 		<array>
 			<dict>
@@ -387,6 +338,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B34F5D4B-43D6-47E7-AC9E-0258BF80F186</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AFFDBAAE-4F4B-4184-B9AF-0EF93DC38C69</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B90FAD76-7252-4A8A-9809-61AEC15EDA65</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -447,19 +411,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>BEF31BF9-C0C4-47F4-9ECA-3D50C2A84EE7</key>
 		<array>
 			<dict>
@@ -491,7 +442,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Start new chat</string>
+				<string>⌘ ↩  开启一段新会话</string>
 				<key>vitoclose</key>
 				<true/>
 			</dict>
@@ -501,32 +452,9 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string>Browse chat histories</string>
+				<string>浏览历史会话</string>
 				<key>vitoclose</key>
 				<true/>
-			</dict>
-		</array>
-		<key>C05A6557-586B-4B86-AFFB-459590991D55</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>01A59F71-DA66-43E4-A948-1F2B653710DF</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Archive images</string>
-				<key>vitoclose</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>6EE7D872-0140-4B1B-B21A-D233250E9CC4</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Reveal most recent image</string>
-				<key>vitoclose</key>
-				<false/>
 			</dict>
 		</array>
 		<key>C6E0966E-A4F8-4DC1-8373-F247FA06A251</key>
@@ -534,32 +462,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>67764921-B974-4D41-A880-7D7C20FEC182</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C7C34D1A-42E0-4C94-B94D-C344D3EE63CE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C05A6557-586B-4B86-AFFB-459590991D55</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C81D4557-D55C-4B23-8FB3-B28519D292A0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2DFDEB25-8ABB-4A11-A363-0879F9878137</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -576,7 +478,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Start new chat</string>
+				<string>⌘ ↩  开启一段新会话</string>
 				<key>vitoclose</key>
 				<true/>
 			</dict>
@@ -609,7 +511,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Start new chat</string>
+				<string>⌘ ↩  开启一段新会话</string>
 				<key>vitoclose</key>
 				<true/>
 			</dict>
@@ -718,13 +620,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Vítor Galvão</string>
+	<string>Meichuan Huang</string>
 	<key>description</key>
-	<string>OpenAI integrations</string>
+	<string>llm model integrations</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>ChatGPT / DALL-E</string>
+	<string>Ask Qwen - COPY</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -761,7 +663,7 @@
 				<key>acceptsurls</key>
 				<false/>
 				<key>name</key>
-				<string>Ask ChatGPT</string>
+				<string>咨询 {var:selected_model} 吧</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.universalaction</string>
@@ -902,6 +804,10 @@ function mv(initPath, targetPath) {
   $.NSFileManager.defaultManager.moveItemAtPathToPathError(initPath, targetPath, undefined)
 }
 
+function copyFile(initPath, targetPath) {
+  $.NSFileManager.defaultManager.copyItemAtPathToPathError(initPath, targetPath, undefined)
+}
+
 function padDate(number) {
   return number.toString().padStart(2, "0")
 }
@@ -921,9 +827,17 @@ const currentChat = `${envVar("alfred_workflow_data")}/chat.json`
 const replacementChat = envVar("replace_with_chat")
 const archiveDir = `${envVar("alfred_workflow_data")}/archive`
 const archivedChat = `${archiveDir}/${currentYear}.${currentMonth}.${currentDay}.${currentHour}.${currentMinute}.${currentSecond}-${uid}.json`
+const userSaveDir = envVar("chat_history_save_dir") // 用户指定的保存目录
 
 makeDir(archiveDir)
 mv(currentChat, archivedChat)
+
+// 如果用户设置了保存目录，则额外复制一份到用户指定目录
+if (userSaveDir &amp;&amp; userSaveDir.length &gt; 0) {
+  makeDir(userSaveDir)
+  const userArchivedChat = `${userSaveDir}/${currentYear}.${currentMonth}.${currentDay}.${currentHour}.${currentMinute}.${currentSecond}-${uid}.json`
+  copyFile(archivedChat, userArchivedChat)
+}
 
 if (replacementChat) {
   mv(replacementChat, currentChat)
@@ -972,12 +886,12 @@ if (replacementChat) {
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
-				<string>continue_chat</string>
+				<string>new_chat</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>FA725E90-6083-4024-B085-AA1FBAD00591</string>
+			<string>A6AD2F54-5A90-4F2A-8585-27AE685FD251</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -987,12 +901,12 @@ if (replacementChat) {
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
-				<string>new_chat</string>
+				<string>continue_chat</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>A6AD2F54-5A90-4F2A-8585-27AE685FD251</string>
+			<string>FA725E90-6083-4024-B085-AA1FBAD00591</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1031,7 +945,7 @@ kill "${pid_stream}"
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:chatgpt_history_save}</string>
+						<string>{var:chat_history_save}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
@@ -1217,19 +1131,6 @@ kill "${pid_stream}"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>text</key>
-				<string>Ask ChatGPT '{query}'</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.fallback</string>
-			<key>uid</key>
-			<string>DA9FB2AC-0A0A-463D-B07A-B25CD699C24C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1285,25 +1186,6 @@ function run() {
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>7CE25BF5-0AF8-411E-8A05-244BF7CA878F</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>behaviour</key>
 				<integer>2</integer>
 				<key>fontmode</key>
@@ -1311,13 +1193,13 @@ function run() {
 				<key>fontsizing</key>
 				<integer>0</integer>
 				<key>footertext</key>
-				<string>↩ Ask question · ⌘↩ New chat · ⌥↩ Copy last · ⌃↩ Copy all · ⇧↩ Interrupt</string>
+				<string>↩ 继续提问 · ⌘↩ 开启新会话并发送 · ⌥↩ 复制最近一次回答 · ⌃↩ 复制全部 · ⇧↩ 中断请求</string>
 				<key>inputfile</key>
-				<string>chatgpt</string>
+				<string>chat_qwen</string>
 				<key>inputtype</key>
 				<integer>1</integer>
 				<key>loadingtext</key>
-				<string>Querying ChatGPT API…</string>
+				<string>模型输出中…</string>
 				<key>outputmode</key>
 				<integer>1</integer>
 				<key>scriptinput</key>
@@ -1363,6 +1245,19 @@ function run() {
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>F51DA51D-D1F1-4C2B-9FF9-D3B0B761C227</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>不如问问 {var:selected_model} 关于:  '{query}'</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>DA9FB2AC-0A0A-463D-B07A-B25CD699C24C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1459,25 +1354,42 @@ function run() {
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>{var:chatgpt_keyword}</string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string>↩ Continue chat · ⌘↩ New chat · ⌥↩ Chat history</string>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
 				<key>text</key>
-				<string>Ask ChatGPT</string>
-				<key>withspace</key>
-				<true/>
+				<string></string>
+				<key>title</key>
+				<string>所选内容已复制</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>BF340515-39CD-47C9-965D-B1631A3BF45F</string>
+			<string>D677EB7A-39FC-447A-B9CF-6824C23A2610</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>7CE25BF5-0AF8-411E-8A05-244BF7CA878F</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1585,6 +1497,54 @@ function run() {
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>{var:trigger_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>↩ 继续提问 · ⌘↩ 新会话· ⌥↩ 历史会话</string>
+				<key>text</key>
+				<string>Ask (模型选择: {var:selected_model})</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BF340515-39CD-47C9-965D-B1631A3BF45F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>54504993-7408-48C6-A3E3-DE1B68203440</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1597,6 +1557,8 @@ function run() {
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>68</integer>
+				<key>keyword</key>
+				<string>history</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1606,7 +1568,7 @@ function run() {
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Loading Histories…</string>
+				<string>正在加载历史记录…</string>
 				<key>script</key>
 				<string>function envVar(varName) {
   return $.NSProcessInfo
@@ -1633,8 +1595,8 @@ function trashChat(path) {
 
 function noArchives() {
   return JSON.stringify({ items: [{
-    title: "No Chat Histories Found",
-    subtitle: "Archives are created when starting new conversations",
+    title: "历史对话记录为空",
+    subtitle: "新会话开启后将会保存上一次（N轮）的历史对话",
     valid: false
   }]})
 }
@@ -1656,8 +1618,8 @@ function run() {
 
       return {
         type: "file",
-        title: firstQuestion,
-        subtitle: lastQuestion,
+        title: "历史提问：" + firstQuestion,
+        subtitle: "最后一个问题是：" + lastQuestion,
         match: `${firstQuestion} ${lastQuestion}`,
         arg: file
       }
@@ -1676,11 +1638,11 @@ function run() {
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>ChatGPT Chat History</string>
+				<string>历史会话</string>
 				<key>type</key>
 				<integer>7</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -1698,7 +1660,7 @@ function run() {
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>chatgpt_history_save</key>
+					<key>chat_history_save</key>
 					<string>1</string>
 					<key>replace_with_chat</key>
 					<string>{query}</string>
@@ -1714,639 +1676,535 @@ function run() {
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>target_path</key>
-					<string>{var:dalle_images_folder}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/directory.children.sort</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>2DFDEB25-8ABB-4A11-A363-0879F9878137</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>save_in</key>
-					<string>{var:archive_dir}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/finder.move</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>target_path</key>
-					<string>{var:archive_dir}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/directory.new</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>C81D4557-D55C-4B23-8FB3-B28519D292A0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>continue_images</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>0052DD7D-01DA-4E09-8B83-3F4994975B5F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>match_string</key>
-					<string>public.png</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/file.uti.matching</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>continue_images</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>C7C34D1A-42E0-4C94-B94D-C344D3EE63CE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>archive_dir</key>
-					<string>{var:dalle_images_folder}/Archive</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>01A59F71-DA66-43E4-A948-1F2B653710DF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>behaviour</key>
-				<integer>2</integer>
-				<key>fontmode</key>
-				<integer>0</integer>
-				<key>fontsizing</key>
-				<integer>0</integer>
-				<key>footertext</key>
-				<string>↩ New prompt · ⌘↩ Archive images · ⌥↩ Reveal last image</string>
-				<key>inputfile</key>
-				<string>dalle</string>
-				<key>inputtype</key>
-				<integer>1</integer>
-				<key>loadingtext</key>
-				<string>Querying DALL·E API…</string>
-				<key>outputmode</key>
-				<integer>0</integer>
-				<key>scriptinput</key>
-				<integer>2</integer>
-				<key>spellchecking</key>
-				<integer>0</integer>
-				<key>stackview</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.userinterface.text</string>
-			<key>uid</key>
-			<string>C05A6557-586B-4B86-AFFB-459590991D55</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>61B83861-C1E7-4430-9D5B-399018364F26</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>target_path</key>
-					<string>{var:dalle_images_folder}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/directory.children.sort.added.leading.1</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>6EE7D872-0140-4B1B-B21A-D233250E9CC4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>{var:dalle_keyword}</string>
+				<string>cleanhistory</string>
 				<key>skipuniversalaction</key>
 				<true/>
 				<key>subtext</key>
-				<string>Send image prompt to DALL·E</string>
+				<string>↩ 点击回车继续执行</string>
 				<key>text</key>
-				<string>Generate with DALL·E</string>
+				<string>清空历史记录</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>698A6D21-8A81-4110-9BF3-BF2FA07C5DC3</string>
+			<string>7527CA10-AC05-4D34-BCA5-B079E0FE5FC9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>已成功清空历史会话记录</string>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>6AAF51CA-1EE9-4CB8-B632-1B83BBD40B45</string>
+			<string>B90FAD76-7252-4A8A-9809-61AEC15EDA65</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>#!/usr/bin/osascript -l JavaScript
+
+function envVar(varName) {
+  return $.NSProcessInfo
+    .processInfo
+    .environment
+    .objectForKey(varName).js
+}
+
+function dirContents(path) {
+  return $.NSFileManager.defaultManager.contentsOfDirectoryAtURLIncludingPropertiesForKeysOptionsError(
+    $.NSURL.fileURLWithPath(path), undefined, $.NSDirectoryEnumerationSkipsHiddenFiles, undefined)
+    .js.map(p =&gt; p.path.js).sort()
+}
+
+function deleteFile(path) {
+  $.NSFileManager.defaultManager.removeItemAtPathError(path, undefined)
+}
+
+function run() {
+  const archiveDir = `${envVar("alfred_workflow_data")}/archive`
+  
+  // 检查archive目录是否存在
+  if (!$.NSFileManager.defaultManager.fileExistsAtPath(archiveDir)) {
+    return JSON.stringify({ 
+      items: [{
+        title: "归档目录不存在",
+        subtitle: "No chat history files were deleted"
+      }]
+    })
+  }
+
+  // 获取目录中的所有文件
+  const files = dirContents(archiveDir)
+    .filter(file =&gt; file.endsWith(".json"))
+  
+  // 删除所有文件
+  let deletedCount = 0
+  files.forEach(file =&gt; {
+    try {
+      deleteFile(file)
+      deletedCount++
+    } catch (error) {
+      // 忽略删除失败的文件
+      console.log("Failed to delete file: " + file)
+    }
+  })
+
+  // 返回结果
+  return JSON.stringify({ 
+    items: [{
+      title: "成功清空历史会话记录",
+      subtitle: `已删除 ${deletedCount} 条记录`
+    }]
+  })
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>清空历史会话记录</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AFFDBAAE-4F4B-4184-B9AF-0EF93DC38C69</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>## Setup
+	<string>## 一、设置
 
-1. Create an OpenAI account and [log in](https://platform.openai.com/login?launch).
-2. On the [API keys page](https://platform.openai.com/api-keys), click `+ Create new secret key`.
-3. Name your new secret key and click `Create secret key`.
-4. Copy your secret key and add it to the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+1. 创建百炼账号并[登录](https://bailian.console.aliyun.com/?tab=home#/home)
+2. 点击[模型服务-秘钥管理](https://bailian.console.aliyun.com/?tab=model#/api-key), 新建秘钥并复制
+3. 获取API平台的的`endpoint`
+4. 复制`apiKey`和`endpoint`，粘贴在workflow的配置项里即可
 
-## Usage
+&gt; 其他平台如[DeepSeek开放平台](https://platform.deepseek.com/sign_in)也是类似的操作
 
-### ChatGPT
+## 二、使用
 
-Query ChatGPT via the `chatgpt` keyword, the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/), or the [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/).
+### 1. 触发Chat
 
-![Start ChatGPT query](images/about/chatgptkeyword.png)
+workflow有三种触发方式：
 
-![Querying ChatGPT](images/about/chatgpttextview.png)
+1. 唤起alfred对话框后，可以通过关键词触发（默认是`ask`, 支持修改）
+![基于关键词触发](images/about/tigger_keyword.png)
+2. 唤起alfred对话框后，配置[兜底召回(Fallback Search)](https://www.alfredapp.com/help/features/default-results/fallback-searches/)触发
+![基于Fallback Search触发](images/about/trigger_fallback_search.png)
+3. 选中任意文字，通过快捷键触发（默认是`⌥/`，支持修改）
+![基于快捷键自动带入文本触发](images/about/trigger_hotkey_with_content.png)
 
-* &lt;kbd&gt;↩&lt;/kbd&gt; Ask a new question.
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Clear and start new chat.
-* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy last answer.
-* &lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy full chat.
-* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Stop generating answer.
+### 2. 对话界面
 
-#### Chat History
+对话面板：
+![对话面板](images/about/chat_pannel.png)
 
-View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the first question as the title and the last as the subtitle.
+进一步的指令：
+* &lt;kbd&gt;↩&lt;/kbd&gt; 继续提问
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; 开启一个新会话
+* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; 复制最近一次的回答
+* &lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; 复制全部对话内容
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; 中断请求
 
-![Viewing chat histories](images/about/chatgpthistory.png)
+### 3. 历史会话
 
-&lt;kbd&gt;↩&lt;/kbd&gt; to archive the current chat and load the selected one. Older chats can be trashed with the `Delete` [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). Select multiple chats with the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer).
+开启新会话后，会将上一轮的对话保存到history中，检索历史会话支持两种触发方式：
 
-### DALL·E
+1. 通过`ask`关键词触发workflow后再按下`⌥↩`可检索出历史会话
+2. 通过单独的`history`关键词直接检索
 
-Query DALL·E via the `dalle` keyword.
+回车后可打开对话面板，可以基于历史会话自动带入上下文重新对话
 
-![Start DALL-E query](images/about/dallekeyword.png)
+![浏览历史会话记录](images/about/history_chat.png)
 
-![Querying DALL-E](images/about/dalletextview.png)
+历史会话支持基于首问和末次问的问题进行检索匹配
 
-* &lt;kbd&gt;↩&lt;/kbd&gt; Send a new prompt.
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Archive images.
-* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Reveal last image in the Finder.</string>
+![历史会话记录检索匹配](images/about/chat_history_search.png)
+
+历史会话允许用户在其他地方保留一个副本
+
+![历史会话自定义存储](images/about/user_history_save.png)
+
+历史会话支持清空，但是清空的只是workflow内部文件(`${envVar("alfred_workflow_data")}/archive`)，用户自定义的副本不会被清空
+
+![历史会话自定义存储](images/about/clean_history.png)</string>
 	<key>uidata</key>
 	<dict>
 		<key>002874FF-3AE4-4E8F-A4F8-65844E5D6CFB</key>
 		<dict>
 			<key>xpos</key>
-			<real>1025</real>
+			<real>1480</real>
 			<key>ypos</key>
-			<real>220</real>
-		</dict>
-		<key>0052DD7D-01DA-4E09-8B83-3F4994975B5F</key>
-		<dict>
-			<key>xpos</key>
-			<real>1385</real>
-			<key>ypos</key>
-			<real>840</real>
+			<real>400</real>
 		</dict>
 		<key>009F4B0B-7B7E-455F-9EA7-51334DBA92F1</key>
 		<dict>
 			<key>xpos</key>
-			<real>2000</real>
+			<real>2455</real>
 			<key>ypos</key>
-			<real>225</real>
-		</dict>
-		<key>01A59F71-DA66-43E4-A948-1F2B653710DF</key>
-		<dict>
-			<key>xpos</key>
-			<real>525</real>
-			<key>ypos</key>
-			<real>870</real>
+			<real>405</real>
 		</dict>
 		<key>02627B69-31FA-4441-A186-B2095B6F40B9</key>
 		<dict>
 			<key>note</key>
 			<string>Stop stream process</string>
 			<key>xpos</key>
-			<real>2105</real>
+			<real>2560</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>375</real>
 		</dict>
 		<key>055D6B34-9A00-49B7-A135-3686D0911EEA</key>
 		<dict>
 			<key>xpos</key>
-			<real>1600</real>
+			<real>2055</real>
 			<key>ypos</key>
-			<real>460</real>
+			<real>640</real>
 		</dict>
 		<key>05B69E0A-58C2-4767-A690-8FA9BECECB57</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>220</real>
+			<real>675</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>215</real>
 		</dict>
 		<key>07D6395E-9C36-4E80-899A-736B6654F06A</key>
 		<dict>
 			<key>xpos</key>
-			<real>625</real>
+			<real>1080</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>665</real>
 		</dict>
 		<key>19467065-1FA8-4C92-9F58-797A122BE296</key>
 		<dict>
 			<key>xpos</key>
-			<real>625</real>
+			<real>1080</real>
 			<key>ypos</key>
-			<real>355</real>
+			<real>535</real>
 		</dict>
 		<key>2345B220-18B0-4F70-9DD7-B7A20763FFBC</key>
 		<dict>
 			<key>xpos</key>
-			<real>2470</real>
+			<real>2925</real>
 			<key>ypos</key>
-			<real>210</real>
+			<real>390</real>
 		</dict>
 		<key>28D73131-7F36-436C-9FA6-988E108F7422</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>455</real>
+			<real>910</real>
 			<key>ypos</key>
-			<real>85</real>
-		</dict>
-		<key>2DFDEB25-8ABB-4A11-A363-0879F9878137</key>
-		<dict>
-			<key>xpos</key>
-			<real>865</real>
-			<key>ypos</key>
-			<real>840</real>
+			<real>265</real>
 		</dict>
 		<key>2F3B5565-0BBD-4DC6-962B-BEF7277AC599</key>
 		<dict>
 			<key>xpos</key>
-			<real>2255</real>
+			<real>2710</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>405</real>
 		</dict>
 		<key>361EA732-1619-44FE-991A-3F0120D41C2F</key>
 		<dict>
 			<key>xpos</key>
-			<real>2105</real>
+			<real>2560</real>
 			<key>ypos</key>
-			<real>460</real>
+			<real>640</real>
 		</dict>
 		<key>3F877D5C-BA2B-4BA1-9601-2CE9D29C31B5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>515</real>
+			<real>970</real>
 			<key>ypos</key>
-			<real>85</real>
+			<real>265</real>
 		</dict>
 		<key>4DB440D5-3814-4C79-9724-D19FDDDA4BEC</key>
 		<dict>
 			<key>xpos</key>
-			<real>1855</real>
+			<real>2310</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>510</real>
 		</dict>
-		<key>61B83861-C1E7-4430-9D5B-399018364F26</key>
+		<key>54504993-7408-48C6-A3E3-DE1B68203440</key>
 		<dict>
+			<key>note</key>
+			<string>选中文本内容并按下hotkey进行快速提问</string>
 			<key>xpos</key>
-			<real>690</real>
+			<real>230</real>
 			<key>ypos</key>
-			<real>970</real>
+			<real>700</real>
 		</dict>
 		<key>67764921-B974-4D41-A880-7D7C20FEC182</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>295</real>
+			<real>750</real>
 			<key>ypos</key>
-			<real>55</real>
-		</dict>
-		<key>698A6D21-8A81-4110-9BF3-BF2FA07C5DC3</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>970</real>
-		</dict>
-		<key>6AAF51CA-1EE9-4CB8-B632-1B83BBD40B45</key>
-		<dict>
-			<key>xpos</key>
-			<real>310</real>
-			<key>ypos</key>
-			<real>1110</real>
-		</dict>
-		<key>6EE7D872-0140-4B1B-B21A-D233250E9CC4</key>
-		<dict>
-			<key>xpos</key>
-			<real>485</real>
-			<key>ypos</key>
-			<real>970</real>
+			<real>235</real>
 		</dict>
 		<key>74890339-2177-4514-B0CD-9D06DF626D21</key>
 		<dict>
 			<key>xpos</key>
-			<real>1090</real>
+			<real>1545</real>
 			<key>ypos</key>
-			<real>210</real>
+			<real>390</real>
+		</dict>
+		<key>7527CA10-AC05-4D34-BCA5-B079E0FE5FC9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<real>525</real>
+			<key>ypos</key>
+			<real>975</real>
 		</dict>
 		<key>7CE25BF5-0AF8-411E-8A05-244BF7CA878F</key>
 		<dict>
 			<key>xpos</key>
-			<real>2470</real>
+			<real>2905</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>570</real>
 		</dict>
 		<key>84A47CA0-9D2D-4F06-A7AD-71C5DEF87663</key>
 		<dict>
 			<key>xpos</key>
-			<real>740</real>
+			<real>1195</real>
 			<key>ypos</key>
-			<real>455</real>
+			<real>635</real>
 		</dict>
 		<key>879C841D-04CC-40AA-800D-689027CF0FB4</key>
 		<dict>
 			<key>xpos</key>
-			<real>625</real>
+			<real>1080</real>
 			<key>ypos</key>
-			<real>645</real>
+			<real>825</real>
 		</dict>
 		<key>93C97340-619A-4F67-AC74-5CC27EFAC17F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>580</real>
+			<real>1035</real>
 			<key>ypos</key>
-			<real>75</real>
-		</dict>
-		<key>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</key>
-		<dict>
-			<key>xpos</key>
-			<real>1210</real>
-			<key>ypos</key>
-			<real>840</real>
+			<real>255</real>
 		</dict>
 		<key>A4782A1E-2A93-401B-9CB7-1D8770AD510E</key>
 		<dict>
 			<key>xpos</key>
-			<real>2105</real>
+			<real>2560</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>510</real>
 		</dict>
 		<key>A6AD2F54-5A90-4F2A-8585-27AE685FD251</key>
 		<dict>
 			<key>xpos</key>
-			<real>875</real>
+			<real>1315</real>
 			<key>ypos</key>
-			<real>190</real>
+			<real>325</real>
 		</dict>
 		<key>A9ABC5CB-D8E3-4E0D-9006-7B7F70A37D50</key>
 		<dict>
 			<key>xpos</key>
-			<real>1600</real>
+			<real>2055</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>510</real>
+		</dict>
+		<key>AFFDBAAE-4F4B-4184-B9AF-0EF93DC38C69</key>
+		<dict>
+			<key>xpos</key>
+			<real>755</real>
+			<key>ypos</key>
+			<real>975</real>
 		</dict>
 		<key>B0805A79-AA30-432C-A7DD-18F900E79413</key>
 		<dict>
 			<key>xpos</key>
-			<real>2470</real>
+			<real>2925</real>
 			<key>ypos</key>
-			<real>90</real>
+			<real>270</real>
 		</dict>
 		<key>B2F04B2C-63AD-4A6D-9A81-7F333D0A075A</key>
 		<dict>
 			<key>xpos</key>
-			<real>295</real>
+			<real>810</real>
 			<key>ypos</key>
-			<real>615</real>
+			<real>795</real>
 		</dict>
 		<key>B31B4473-3184-4D6C-B4D9-78FC5DCC7D00</key>
 		<dict>
 			<key>xpos</key>
-			<real>1240</real>
+			<real>1695</real>
 			<key>ypos</key>
-			<real>230</real>
+			<real>410</real>
 		</dict>
 		<key>B34F5D4B-43D6-47E7-AC9E-0258BF80F186</key>
 		<dict>
 			<key>xpos</key>
-			<real>1770</real>
+			<real>2225</real>
 			<key>ypos</key>
-			<real>360</real>
+			<real>540</real>
+		</dict>
+		<key>B90FAD76-7252-4A8A-9809-61AEC15EDA65</key>
+		<dict>
+			<key>xpos</key>
+			<real>985</real>
+			<key>ypos</key>
+			<real>975</real>
 		</dict>
 		<key>BA834298-7386-4B4C-9E7D-E2D8542518B0</key>
 		<dict>
 			<key>xpos</key>
-			<real>2345</real>
+			<real>2800</real>
 			<key>ypos</key>
-			<real>360</real>
-		</dict>
-		<key>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</key>
-		<dict>
-			<key>xpos</key>
-			<real>1040</real>
-			<key>ypos</key>
-			<real>840</real>
+			<real>540</real>
 		</dict>
 		<key>BEF31BF9-C0C4-47F4-9ECA-3D50C2A84EE7</key>
 		<dict>
 			<key>xpos</key>
-			<real>1470</real>
+			<real>1925</real>
 			<key>ypos</key>
-			<real>360</real>
+			<real>540</real>
 		</dict>
 		<key>BF340515-39CD-47C9-965D-B1631A3BF45F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>520</real>
 			<key>ypos</key>
-			<real>455</real>
-		</dict>
-		<key>C05A6557-586B-4B86-AFFB-459590991D55</key>
-		<dict>
-			<key>xpos</key>
-			<real>275</real>
-			<key>ypos</key>
-			<real>970</real>
+			<real>700</real>
 		</dict>
 		<key>C6E0966E-A4F8-4DC1-8373-F247FA06A251</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>220</real>
+			<real>675</real>
 			<key>ypos</key>
-			<real>135</real>
-		</dict>
-		<key>C7C34D1A-42E0-4C94-B94D-C344D3EE63CE</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>840</real>
-		</dict>
-		<key>C81D4557-D55C-4B23-8FB3-B28519D292A0</key>
-		<dict>
-			<key>xpos</key>
-			<real>690</real>
-			<key>ypos</key>
-			<real>840</real>
+			<real>315</real>
 		</dict>
 		<key>CBBF8BED-C42D-4793-8FEA-EA80FC94C493</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>510</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>235</real>
+		</dict>
+		<key>D677EB7A-39FC-447A-B9CF-6824C23A2610</key>
+		<dict>
+			<key>xpos</key>
+			<real>3100</real>
+			<key>ypos</key>
+			<real>570</real>
 		</dict>
 		<key>DA9FB2AC-0A0A-463D-B07A-B25CD699C24C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>520</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>530</real>
 		</dict>
 		<key>E5D42111-A4E5-4C7E-AED9-B0A379A66986</key>
 		<dict>
 			<key>xpos</key>
-			<real>1535</real>
+			<real>1990</real>
 			<key>ypos</key>
-			<real>360</real>
+			<real>540</real>
 		</dict>
 		<key>E65D3BEB-6B77-4799-B6BA-A8DBDEFB7167</key>
 		<dict>
 			<key>xpos</key>
-			<real>2330</real>
+			<real>2785</real>
 			<key>ypos</key>
-			<real>215</real>
+			<real>395</real>
 		</dict>
 		<key>F4D88498-0A97-492F-989F-26182BFEEE31</key>
 		<dict>
 			<key>xpos</key>
-			<real>740</real>
+			<real>1195</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>505</real>
 		</dict>
 		<key>F51DA51D-D1F1-4C2B-9FF9-D3B0B761C227</key>
 		<dict>
 			<key>xpos</key>
-			<real>895</real>
+			<real>1350</real>
 			<key>ypos</key>
-			<real>345</real>
+			<real>525</real>
 		</dict>
 		<key>F87E8DE0-4373-4E35-B112-2E68DC5B10E8</key>
 		<dict>
 			<key>xpos</key>
-			<real>1240</real>
+			<real>1695</real>
 			<key>ypos</key>
-			<real>105</real>
+			<real>285</real>
 		</dict>
 		<key>FA725E90-6083-4024-B085-AA1FBAD00591</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>520</real>
 			<key>ypos</key>
-			<real>190</real>
+			<real>370</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -2355,28 +2213,7 @@ Query DALL·E via the `dalle` keyword.
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string></string>
-				<key>placeholder</key>
-				<string></string>
-				<key>required</key>
-				<true/>
-				<key>trim</key>
-				<true/>
-			</dict>
-			<key>description</key>
-			<string>Get it at https://platform.openai.com/api-keys</string>
-			<key>label</key>
-			<string>OpenAI API Key</string>
-			<key>type</key>
-			<string>textfield</string>
-			<key>variable</key>
-			<string>openai_api_key</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string>chatgpt</string>
+				<string>ask</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -2387,11 +2224,108 @@ Query DALL·E via the `dalle` keyword.
 			<key>description</key>
 			<string></string>
 			<key>label</key>
-			<string>ChatGPT Keyword</string>
+			<string>触发关键词</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
-			<string>chatgpt_keyword</string>
+			<string>trigger_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>API Key</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>llm_api_key</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>阿里云百炼 API</string>
+						<string>https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions</string>
+					</array>
+					<array>
+						<string>OpenAI API</string>
+						<string>https://api.openai.com/v1/chat/completions</string>
+					</array>
+					<array>
+						<string>DeepSeek API</string>
+						<string>https://api.deepseek.com/chat/completions</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>API端点（endpoint）</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>endpoint</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>qwen3-max</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>qwen3-max</string>
+						<string>qwen3-max</string>
+					</array>
+					<array>
+						<string>qwen-flash</string>
+						<string>qwen-flash</string>
+					</array>
+					<array>
+						<string>qwen-plus</string>
+						<string>qwen-plus</string>
+					</array>
+					<array>
+						<string>deepseek-chat</string>
+						<string>deepseek-chat</string>
+					</array>
+					<array>
+						<string>deepseek-reasoner</string>
+						<string>deepseek-reasoner</string>
+					</array>
+					<array>
+						<string>GPT 5</string>
+						<string>gpt-5</string>
+					</array>
+					<array>
+						<string>GPT 4o</string>
+						<string>gpt-4o</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>模型</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>selected_model</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2401,82 +2335,56 @@ Query DALL·E via the `dalle` keyword.
 				<key>required</key>
 				<false/>
 				<key>text</key>
-				<string>Save current chat when starting a new one</string>
+				<string>开启</string>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>启用互联网搜索功能可能会增加 Token 的消耗</string>
 			<key>label</key>
-			<string>Keep History</string>
+			<string>启用互联网搜索</string>
 			<key>type</key>
 			<string>checkbox</string>
 			<key>variable</key>
-			<string>chatgpt_history_save</string>
+			<string>enable_search</string>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>gpt-5-nano</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>GPT 5 nano</string>
-						<string>gpt-5-nano</string>
-					</array>
-					<array>
-						<string>GPT 5 mini</string>
-						<string>gpt-5-mini</string>
-					</array>
-					<array>
-						<string>GPT 5</string>
-						<string>gpt-5</string>
-					</array>
-					<array>
-						<string>GPT 4.1 nano</string>
-						<string>gpt-4.1-nano</string>
-					</array>
-					<array>
-						<string>GPT 4.1 mini</string>
-						<string>gpt-4.1-mini</string>
-					</array>
-					<array>
-						<string>GPT 4.1</string>
-						<string>gpt-4.1</string>
-					</array>
-					<array>
-						<string>GPT 4o mini</string>
-						<string>gpt-4o-mini</string>
-					</array>
-					<array>
-						<string>GPT 4o</string>
-						<string>gpt-4o</string>
-					</array>
-					<array>
-						<string>o1</string>
-						<string>o1</string>
-					</array>
-					<array>
-						<string>o3</string>
-						<string>o3</string>
-					</array>
-					<array>
-						<string>o3 mini</string>
-						<string>o3-mini</string>
-					</array>
-					<array>
-						<string>o4 mini</string>
-						<string>o4-mini</string>
-					</array>
-				</array>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>保存</string>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>当开启新一次会话时会保存上一次会话（N轮）</string>
 			<key>label</key>
-			<string>Model</string>
+			<string>历史会话保存</string>
 			<key>type</key>
-			<string>popupbutton</string>
+			<string>checkbox</string>
 			<key>variable</key>
-			<string>gpt_model</string>
+			<string>chat_history_save</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>~/Documents/Alfred/chat history</string>
+				<key>filtermode</key>
+				<integer>1</integer>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+			</dict>
+			<key>description</key>
+			<string>若有值，会复制一份历史会话到目标地址</string>
+			<key>label</key>
+			<string>自定义历史会话保存地址</string>
+			<key>type</key>
+			<string>filepicker</string>
+			<key>variable</key>
+			<string>chat_history_save_dir</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2495,9 +2403,9 @@ Query DALL·E via the `dalle` keyword.
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>How many older questions and answers to send.</string>
+			<string>若设置N，则会上传最近N/2 轮Q&amp;A</string>
 			<key>label</key>
-			<string>Context</string>
+			<string>上下文长度限制</string>
 			<key>type</key>
 			<string>slider</string>
 			<key>variable</key>
@@ -2520,9 +2428,9 @@ Query DALL·E via the `dalle` keyword.
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>How many seconds to wait before giving up connection.</string>
+			<string>若持续N秒无数据返回，则放弃curl请求</string>
 			<key>label</key>
-			<string>Timeout</string>
+			<string>超时时间（s）</string>
 			<key>type</key>
 			<string>slider</string>
 			<key>variable</key>
@@ -2541,183 +2449,33 @@ Query DALL·E via the `dalle` keyword.
 				<integer>3</integer>
 			</dict>
 			<key>description</key>
-			<string>Initial message to guide ChatGPT on the answers you expect. Supported on select models.</string>
+			<string>可设置系统提示词以更好地引导模型进行回答</string>
 			<key>label</key>
-			<string>System Prompt</string>
+			<string>系统提示词(System Prompt)</string>
 			<key>type</key>
 			<string>textarea</string>
 			<key>variable</key>
 			<string>system_prompt</string>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string>dalle</string>
-				<key>placeholder</key>
-				<string></string>
-				<key>required</key>
-				<false/>
-				<key>trim</key>
-				<true/>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>DALL·E Keyword</string>
-			<key>type</key>
-			<string>textfield</string>
-			<key>variable</key>
-			<string>dalle_keyword</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string>~/Desktop/DALL-E</string>
-				<key>filtermode</key>
-				<integer>1</integer>
-				<key>placeholder</key>
-				<string></string>
-				<key>required</key>
-				<false/>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>Save Folder</string>
-			<key>type</key>
-			<string>filepicker</string>
-			<key>variable</key>
-			<string>dalle_images_folder</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<true/>
-				<key>required</key>
-				<false/>
-				<key>text</key>
-				<string>Write prompt and creator to image file metadata</string>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>Include Metadata</string>
-			<key>type</key>
-			<string>checkbox</string>
-			<key>variable</key>
-			<string>dalle_write_metadata</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string>dall-e-3</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>DALL·E 3</string>
-						<string>dall-e-3</string>
-					</array>
-				</array>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>Image Model</string>
-			<key>type</key>
-			<string>popupbutton</string>
-			<key>variable</key>
-			<string>dalle_model</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string>vivid</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>Vivid</string>
-						<string>vivid</string>
-					</array>
-					<array>
-						<string>Natural</string>
-						<string>natural</string>
-					</array>
-				</array>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>Style</string>
-			<key>type</key>
-			<string>popupbutton</string>
-			<key>variable</key>
-			<string>dalle_style</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string>standard</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>Standard</string>
-						<string>standard</string>
-					</array>
-					<array>
-						<string>High Definition</string>
-						<string>hd</string>
-					</array>
-				</array>
-			</dict>
-			<key>description</key>
-			<string>Lower quality images cost less.</string>
-			<key>label</key>
-			<string>Quality</string>
-			<key>type</key>
-			<string>popupbutton</string>
-			<key>variable</key>
-			<string>dalle_quality</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string></string>
-				<key>placeholder</key>
-				<string>Optional OpenAI Organisation Identifier</string>
-				<key>required</key>
-				<false/>
-				<key>trim</key>
-				<true/>
-			</dict>
-			<key>description</key>
-			<string>Get it at https://platform.openai.com/account/organization</string>
-			<key>label</key>
-			<string>Organisation ID</string>
-			<key>type</key>
-			<string>textfield</string>
-			<key>variable</key>
-			<string>openai_org_id</string>
-		</dict>
 	</array>
 	<key>variables</key>
 	<dict>
-		<key>chatgpt_api_endpoint</key>
-		<string>https://api.openai.com/v1/chat/completions</string>
-		<key>chatgpt_model_override</key>
+		<key>override_chat_endpoint</key>
 		<string></string>
-		<key>dalle_api_endpoint</key>
-		<string>https://api.openai.com/v1/images/generations</string>
+		<key>override_chat_presence_penalty</key>
+		<string></string>
+		<key>override_chat_selected_model</key>
+		<string></string>
+		<key>override_chat_temperature</key>
+		<string></string>
+		<key>override_chat_top_k</key>
+		<string></string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>25.2</string>
+	<string>1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/alfredapp/openai-workflow/</string>
+	<string></string>
 </dict>
 </plist>
